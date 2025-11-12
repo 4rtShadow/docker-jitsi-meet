@@ -1,0 +1,47 @@
+/* Кастомизация начальной страницы Jitsi Meet */
+
+/* Изменение фона */
+body {
+    background: url('/images/background.jpg') no-repeat center center fixed !important;
+    background-size: cover !important;
+}
+
+/* Стилизация главного контейнера */
+.welcome-page {
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 20px !important;
+    margin: 20px !important;
+}
+
+/* Изменение цвета заголовка */
+.welcome-page h1 {
+    color: #ffffff !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3) !important;
+}
+
+/* Стилизация кнопок */
+.welcome-page .btn {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    color: #ffffff !important;
+    border-radius: 25px !important;
+    transition: all 0.3s ease !important;
+}
+
+.welcome-page .btn:hover {
+    background: rgba(255, 255, 255, 0.3) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2) !important;
+}
+
+/* Скрытие логотипа Jitsi (если нужно) */
+.watermark {
+    display: none !important;
+}
+
+/* Кастомный логотип */
+.custom-logo {
+    max-height: 60px !important;
+    margin-bottom: 20px !important;
+}

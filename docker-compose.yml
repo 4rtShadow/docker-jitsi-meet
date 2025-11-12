@@ -44,6 +44,9 @@ services:
             - ${CONFIG}/web:/config:Z
             - ${CONFIG}/web/crontabs:/var/spool/cron/crontabs:Z
             - ${CONFIG}/transcripts:/usr/share/jitsi-meet/transcripts:Z
+            - ./custom-config/custom.css:/usr/share/jitsi-meet/css/custom.css:Z
+            - ./custom-config/custom.js:/usr/share/jitsi-meet/js/custom.js:Z
+            - ./custom-config/images:/usr/share/jitsi-meet/images:Z
         environment:
             - AMPLITUDE_ID
             - ANALYTICS_SCRIPT_URLS
@@ -205,6 +208,10 @@ services:
             - XMPP_PORT
             - WHITEBOARD_COLLAB_SERVER_PUBLIC_URL
             - WHITEBOARD_COLLAB_SERVER_URL_BASE
+            - APP_NAME
+            - BRAND_WATERMARK_LINK
+            - HIDE_JITSI_WATERMARK
+            - BACKGROUND_COLOR
         networks:
             meet.jitsi:
             proxy:
