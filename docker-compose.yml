@@ -208,10 +208,6 @@ services:
             - XMPP_PORT
             - WHITEBOARD_COLLAB_SERVER_PUBLIC_URL
             - WHITEBOARD_COLLAB_SERVER_URL_BASE
-            - APP_NAME
-            - BRAND_WATERMARK_LINK
-            - HIDE_JITSI_WATERMARK
-            - BACKGROUND_COLOR
         networks:
             meet.jitsi:
             proxy:
